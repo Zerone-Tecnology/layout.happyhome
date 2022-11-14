@@ -2431,7 +2431,11 @@ a:hover {
   font-size: 2em;
 }
 
-.text-center {
+.tr {
+  text-align: right;
+}
+
+.tc {
   text-align: center;
 }
 
