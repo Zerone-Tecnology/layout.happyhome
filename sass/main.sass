@@ -16,7 +16,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.1
 	font-family: $default-font
 	overflow-x: hidden
 	color: #0d213a
@@ -27,7 +27,11 @@ body
 				border-color: red
 			&:required:valid
 				border-color: green
-
+a
+	color: $accent
+	&:hover
+		color: darken($accent, 30%)
+		text-decoration: none
 .img-responsive
 	display: block
 	max-width: 100%
@@ -47,6 +51,11 @@ body
 		background-repeat: no-repeat
 		background-position: 90% 50%
 		padding-right: 150px
+		&-r
+			background-image: url('../img/arr.svg')
+			background-repeat: no-repeat
+			background-position: 90% 50%
+			padding-right: 150px
 	&-plus
 		background-color: #ffffff
 		width: 60px
@@ -56,7 +65,7 @@ body
 .text-center
 	text-align: center
 .header
-	margin: 55px 0
+	margin: 55px 0 0
 .nav-wrap
 	ul li
 		display: inline-block
@@ -79,6 +88,7 @@ body
 	position: relative
 	text-align: right
 .h-title
+	font-family: 'futura-light', sans-serif
 	color: #c1a9c3
 	text-transform: uppercase
 	font-size: 32px
@@ -90,7 +100,9 @@ body
 	margin-top: 50%
 	width: 100%
 .bg
-	position: relative
+	position: relative	
+	background-size: cover
+	height: 100%
 	&::after
 		content: ''
 		position: absolute
@@ -102,12 +114,10 @@ body
 		z-index: 0
 .bg-1
 	background-image: url('../img/bg_1.jpg')
-	background-size: cover
-	height: 100%
 .bg-2
 	background-image: url('../img/bg_2.jpg')
-	background-size: cover
-	height: 100%
+.bg-3
+	background-image: url('../img/bg_3.jpg')
 .b-txt
 	font-size: 36px
 	color: #fff
@@ -115,7 +125,7 @@ body
 	position: relative
 	display: block
 	z-index: 3
-.sec_1 .b-txt
+.b-txt
 	padding: 110px 0 0 60px
 	p
 		width: 70%
@@ -123,6 +133,8 @@ body
 .color
 	color: $accent
 	font-size: 24px
+.small
+	font-size: 18px
 .sec_2
 	text-align: center
 	p
@@ -168,5 +180,76 @@ body
 		margin: 0 auto
 .sec_4
 	text-align: center
+
+.sec_5
+	.b-content
+		height: 100%
+
+.footer
+	margin: 100px 0
+	.line
+		border-top: 1px solid #D9D9D9
+		margin: 50px 0
+		padding: 50px 0
+	.social
+		list-style-type: none
+		li
+			display: inline-block
+			margin: 0 10px
+.popup-form
+	width: 60%
+	background-color: #fff
+	margin: 0 auto
+	background-image: url('../img/bg_popup.jpg')
+	background-repeat: no-repeat
+	padding-left: 360px
+	position: relative
+	.p-content
+		background-color: #fff
+		padding: 55px
+		text-align: center
+		position: relative
+		.title
+			font-size: 36px
+			margin-top: 0
+		p
+			font-size: 18px
+	.line
+		border-top: 1px solid #D9D9D9
+		border-bottom: 1px solid #D9D9D9
+		padding: 25px 0
+		margin: 25px 0
+	.f-input
+		border: none
+		border-bottom: 1px solid #0D213A8A
+		margin: 0 5px
+		font-family: 'futura-light', sans-serif
+		&:placeholder
+			color: #D9D9D9
+	.mfp-close
+		border: 1px solid $accent
+		display: inline-block
+		width: 50px
+		height: 50px
+		color: $accent
+		font-size: 1.7em
+		position: absolute
+		right: 15px
+		top: 15px
+	.btn
+		margin-top: 45px
+	.p-agree
+		width: 250px
+		margin: 0 auto
+		font-size: 12px
+		text-align: left
+		input
+			vertical-align: top
+			margin-top: 5px
+		label
+			display: inline-block
+			width: 80%
+			margin-left: 15px
+			line-height: 1.2em
 
 @import "media" // Always at the end

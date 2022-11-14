@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				<div class="col-md-2">
-					<a href="#" class="btn">Получить консультацию</a>
+					<a href="#popup" class="btn btn-popup">Получить консультацию</a>
 				</div>
 		</div>
 	</div>
@@ -94,23 +94,23 @@
 					<div class="h-title">ГАЛЕРЕЯ</div>
 					<div class="g-block gb-1">
 						<div class="btn-plus">+</div>
-						<div class="img-wrap">
-							<img src="./img/car1-1.jpg" alt="Car">
+						<div class="img-wrap popup-gallery">
+							<a href="/img/car1-1.jpg"><img src="./img/car1-1.jpg" alt="Car"></a>
 						</div>
 					</div>
 					<div class="g-block gb-2">
 						<div class="btn-plus">+</div>
-						<div class="img-wrap">
-							<img src="./img/car1-3.jpg" alt="Car">
+						<div class="img-wrap popup-gallery">
+							<a href="/img/car1-3.jpg"><img src="./img/car1-3.jpg" alt="Car"></a>
 						</div>
-						<div class="img-wrap">
-							<img src="./img/car1-4.jpg" alt="Car">
+						<div class="img-wrap popup-gallery">
+							<a href="/img/car1-4.jpg"><img src="./img/car1-4.jpg" alt="Car"></a>
 						</div>
 					</div>
 					<div class="g-block gb-1">
 						<div class="btn-plus">+</div>
-						<div class="img-wrap">
-							<img src="./img/car1-2.jpg" alt="Car">
+						<div class="img-wrap popup-gallery">
+							<a href="/img/car1-2.jpg"><img src="./img/car1-2.jpg" alt="Car"></a>
 						</div>
 					</div>
 				</div>
@@ -160,6 +160,79 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="section sec_5">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-8">
+				<div class="bg bg-3">
+					<div class="b-content">
+						<div class="b-txt">
+							<p>Розыгрыш состоится <br> 3 февраля 2023 года</p>
+							<p class="small">А также в течение трех месяцев: 22 ноября – 22 декабря – 3 февраля – будут разыгрываться другие ценные призы</p>
+							<a href="#" class="btn btn-red btn-arr">Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="img-wrap">
+					<img src="../img/car_2.jpg" alt="Car">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo-wrap">
+					<img src="../img/hh_logo.svg" alt="Happy Home">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<a href="#" class="btn btn-arr-r">Подробные условия и правила участия</a>
+			</div>
+		</div>
+		<div class="row line">
+			<div class="col-md-4">
+				<p class="copy">© Happy Home Interiors, 2022</p>
+			</div>
+			<div class="col-md-4">
+				<ul class="social">
+					<li><a href="#"><img src="../img/in.svg" alt="instagram"></a></li>
+					<li><a href="#"><img src="../img/fb.svg" alt="facebook"></a></li>
+					<li><a href="#"><img src="../img/tg.svg" alt="telegram"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<a href="https://zeronetech.kz" target="_blank" class="zerone_copy">Разработка сайта — Zerone Technology</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup-form mfp-hide" id="popup">
+	<div class="p-content">
+		<div class="title">Заполните форму</div>
+		<p class="color">Для получения подробной информации о розыгрыше</p>
+		<form action="mail.php" class="form">
+			<div class="line">
+				<input type="text" name="name" id="name" placeholder="Ваше Имя" class="f-input">
+				<input type="text" name="sname" id="sname" placeholder="Фамилия" class="f-input">
+				<input type="text" name="phone" id="phone" placeholder="Телефон" class="f-input">
+			</div>
+			<div class="p-agree">
+				<input type="checkbox" name="agree" id="agree">
+				<label for="agree">Я согласен на <a href="#">сбор и обработку персональных данных</a></label>
+			</div>
+			<br>
+			<button class="btn btn-red btn-arr">Отправить</button>
+		</form>
 	</div>
 </div>
 	<script src="/js/scripts.min.js"></script>
