@@ -2722,6 +2722,17 @@ a:hover {
   margin-left: 15px;
   line-height: 1.2em;
 }
+.popup-form .info-box {
+  background: #B597B7;
+  padding: 30px;
+  background-image: url("../img/corner-bird 1.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  color: #fff;
+}
+.popup-form .big {
+  font-size: 36px;
+}
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1599.98px) {
