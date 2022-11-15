@@ -379,9 +379,9 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .container {
-    max-width: 540px;
+    max-width: 900px;
   }
 }
 @media (min-width: 1200px) {
@@ -614,7 +614,7 @@ html {
   margin-left: 91.6666666667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -1214,7 +1214,7 @@ html {
   display: inline-flex !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .d-sm-none {
     display: none !important;
   }
@@ -1475,7 +1475,7 @@ html {
   align-self: stretch !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .flex-sm-row {
     flex-direction: row !important;
   }
@@ -2449,6 +2449,10 @@ a:hover {
   margin: 55px 0 0;
 }
 
+.logo-wrap img {
+  width: 100%;
+}
+
 .nav-wrap ul li {
   display: inline-block;
   padding: 5px 15px;
@@ -2720,4 +2724,26 @@ a:hover {
 }
 
 /*==========  Desktop First  ==========*/
+@media (max-width: 1599.98px) {
+  .popup-form {
+    padding-left: 300px;
+  }
+  .popup-form .p-content {
+    padding: 55px 40px;
+  }
+  .popup-form .f-input {
+    padding: 5px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .sec_2 .g-1 {
+    height: 400px;
+  }
+  .sec_2 .g-2 {
+    height: 190px;
+  }
+  .popup-form {
+    padding-left: 250px;
+  }
+}
 /*==========  Mobile First  ==========*//*# sourceMappingURL=main.css.map */
