@@ -2408,11 +2408,23 @@ a:hover {
   font-size: 14px;
   background-color: transparent;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  position: relative;
 }
 .btn:hover {
   box-shadow: 0 0 40px 40px #87085A inset;
   color: #fff;
   outline: 0;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 15px;
+  top: 50%;
+  margin-top: -5px;
 }
 .btn-red {
   background-color: #87085A;
@@ -2423,16 +2435,19 @@ a:hover {
   box-shadow: 0 0 40px 40px #D4A5C1 inset;
 }
 .btn-arr {
+  padding-right: 60px;
+}
+.btn-arr::before {
   background-image: url("../img/arr-w.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-  padding-right: 150px;
 }
 .btn-arr-r {
+  padding-right: 60px;
+}
+.btn-arr-r:hover::before {
+  background-image: url("../img/arr-w.svg");
+}
+.btn-arr-r::before {
   background-image: url("../img/arr.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
-  padding-right: 150px;
 }
 .btn-plus {
   background-color: #ffffff;
@@ -2774,13 +2789,12 @@ a:hover {
 @media (max-width: 1439.98px) {
   .header .tr {
     text-align: center;
-    padding: 55px 0 15px;
   }
-  .sec_2 .g-1 {
-    height: 400px;
+  .title {
+    margin-bottom: 15px;
   }
-  .sec_2 .g-2 {
-    height: 400px;
+  .sec_2 .g-1, .sec_2 .g-2 {
+    height: auto;
   }
   .popup-form {
     padding-left: 250px;
@@ -2792,6 +2806,9 @@ a:hover {
   }
   .nav-wrap {
     display: none;
+  }
+  .nav-wrap .header .tr {
+    padding: 55px 0 15px;
   }
   .sec_2 .g-1, .sec_2 .g-2 {
     height: auto;

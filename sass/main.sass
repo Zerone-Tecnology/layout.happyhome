@@ -46,10 +46,21 @@ a
 	font-size: 14px
 	background-color: transparent
 	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out
+	position: relative
 	&:hover
 		box-shadow: 0 0 40px 40px $accent inset
 		color: #fff
 		outline: 0
+	&::before
+		content: ''
+		position: absolute
+		width: 30px
+		height: 10px
+		background-size: contain
+		background-repeat: no-repeat
+		right: 15px
+		top: 50%
+		margin-top: -5px
 	&-red
 		background-color: $accent
 		color: #fff
@@ -57,15 +68,15 @@ a
 			background-color: #D4A5C1		
 			box-shadow: 0 0 40px 40px #D4A5C1 inset
 	&-arr
-		background-image: url('../img/arr-w.svg')
-		background-repeat: no-repeat
-		background-position: 90% 50%
-		padding-right: 150px
-		&-r
+		padding-right: 60px
+		&::before			
+			background-image: url('../img/arr-w.svg')
+	&-arr-r
+		padding-right: 60px
+		&:hover::before
+			background-image: url('../img/arr-w.svg')
+		&::before
 			background-image: url('../img/arr.svg')
-			background-repeat: no-repeat
-			background-position: 90% 50%
-			padding-right: 150px
 	&-plus
 		background-color: #ffffff
 		width: 60px
