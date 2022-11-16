@@ -40,12 +40,22 @@ a
 	color: $accent
 	border: 1px solid $accent
 	display: inline-block
+	// display: flex
 	padding: 15px
 	text-align: center
 	font-size: 14px
+	background-color: transparent
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out
+	&:hover
+		box-shadow: 0 0 40px 40px $accent inset
+		color: #fff
+		outline: 0
 	&-red
 		background-color: $accent
 		color: #fff
+		&:hover
+			background-color: #D4A5C1		
+			box-shadow: 0 0 40px 40px #D4A5C1 inset
 	&-arr
 		background-image: url('../img/arr-w.svg')
 		background-repeat: no-repeat
@@ -77,16 +87,21 @@ a
 	img
 		width: 100%
 .nav-wrap
-	ul li
-		display: inline-block
-		padding: 5px 15px
+	ul 
+		padding-left: 0
+		li
+			display: inline-block
+			padding: 5px 15px
 	a
 		font-size: 18px
 		color: #0d213a
 		display: block
 		&:hover
 			color: $accent
-
+.mmenu
+	display: none
+	img
+		margin-left: 15px
 .title
 	font-size: 64px
 	text-transform: uppercase
@@ -148,6 +163,9 @@ a
 	font-size: 24px
 .small
 	font-size: 18px
+.header
+	.btn-arr-r
+		padding-right: 70px
 .section
 	.img-wrap
 		overflow: hidden
