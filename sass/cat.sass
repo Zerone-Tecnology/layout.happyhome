@@ -1,0 +1,50 @@
+.section_category
+	.block-wrap
+		&:nth-child(odd)
+			.block
+				flex-direction: row-reverse
+		.block
+			display: flex
+			flex-direction: row
+			.b-title
+				font-size: 1.75em
+				font-weight: 700
+				margin-bottom: 25px
+				text-transform: uppercase
+		.left-wrap
+			width: calc(100% / 3)
+			padding: 2.2em
+			text-align: left
+		.center-wrap
+			width: calc(100% / 3)
+			padding: 2.2em
+			color: #fff
+			text-align: center
+			.b-title
+				
+		.right-wrap
+			width: calc(100% / 3)
+
+@media only screen and (max-width: 920px)
+	.section_category
+		.block-wrap
+			&:nth-child(odd)
+				.block
+					flex-direction: row
+			.block
+				flex-wrap: wrap
+			.left-wrap, 
+			.center-wrap
+				width: calc(100% / 2)
+			.right-wrap
+				width: 100%
+				min-height: 300px
+				background-color: #eee
+
+@media only screen and (max-width: 768px)
+	.section_category
+		.block-wrap
+			.left-wrap, 
+			.center-wrap,
+			.right-wrap
+				width: 100%

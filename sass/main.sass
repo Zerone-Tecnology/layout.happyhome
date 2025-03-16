@@ -109,11 +109,42 @@ a
 		display: block
 		&:hover
 			color: $accent
+	&.show
+		display: block
 .mmenu
 	display: none
 	text-align: right
 	img
 		margin-left: 15px
+.mmenu-wrap
+	position: fixed
+	top: 0
+	width: 100%
+	height: auto
+	background-color: #fff
+	padding: 25px
+	z-index: 9
+	display: none
+	&.show
+		display: block
+	.logo-wrap
+		width: 50%
+		display: inline-block
+	.btn-close
+		text-align: right
+		display: inline-block
+		width: 45%
+	.nav-wrap-mobile
+		margin-top: 55px
+		border-top: 1px solid #D9D9D9
+		padding-top: 25px
+		ul li
+			width: 100%
+			list-style-type: none
+			a
+				display: block
+				padding: 15px 0
+				font-size: 24px
 .title
 	font-size: 64px
 	text-transform: uppercase
